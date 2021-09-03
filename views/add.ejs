@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/add.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <title>Online Voting</title>
+</head>
+<body>
+    <header>
+        <h3 class="nav_header">Administrator Portal</h3>
+        <nav>
+            <ul class="nav_links">
+				<li id="home"><a href="/indexvoter" class="item">INDEX</a></li>
+				<li><a href="/votecount" class="item">COUNT</a></li>
+				<li><a href="/logout" class="item">LOGOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+	<!-- <img class="wave" src="/img/wave.png"> -->
+	<div class="container">
+		<div class="img">
+			<!-- <img src="/img/travel.png"> -->
+		</div>
+		<div class="login-content">
+			<form action="/admin" method="POST">
+				<img src="/img/avatar1.svg">
+				<h2 class="title">Add</h2>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>Candidate Name</h5>
+           		   		<input type="text" name="admin[cname]" required>
+           		   </div>
+           		</div>
+           		<div class="input-div age">
+           		   <div class="i"> 
+                        <i class="fa fa-genderless"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Candidate Age</h5>
+           		    	<input type="Number" name="admin[cage]" required>
+                   </div>
+                </div>
+                <div class="input-div party">
+                    <div class="i"> 
+                        <i class='fas fa-flag-usa'></i>
+                    </div>
+                    <div class="div">
+                         <h5>Party Name</h5>
+                         <input type="text" name="admin[cparty]" required>
+                    </div>
+              </div>
+              <!-- <div class="input-div phone">
+                <div class="i"> 
+                    <i class='fas fa-phone-alt'></i>
+                </div>
+                <div class="div">
+                     <h5>Vote Count</h5> -->
+                     <input type="hidden" name="admin[ccount]" placeholder="Enter default vaue 0" value=0  disabled="disabled" hidden>
+                <!-- </div>
+            </div> -->
+            <div class="input-div info">
+                <div class="i"> 
+                    <i class="fa fa-info-circle"></i>
+                </div>
+                <div class="div">
+                     <h5>Candidate Information</h5>
+                     <input type="text" name="admin[cinfo]" required>
+                </div>
+            </div>
+            <div class="input-div image">
+                <div class="i"> 
+                    <i class="fa fa-image"></i>
+                </div>
+                <div class="div">
+                     <h5>Candidate Photo</h5>
+                     <input type="text" name="admin[cimage]" required>
+                </div>
+            </div>
+            	<input type="submit" class="btn" value="submit">
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="/js/login.js"></script>
+</body>
+</html>

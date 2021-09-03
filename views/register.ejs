@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/register.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <title>Online Voting</title>
+</head>
+<body>
+    <header>
+        <h3 class="nav_header">Voting Portal</h3>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="/login">Sign In</a></li>
+                <li id="home"><a href="/">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+	<!-- <img class="wave" src="/img/wave.png"> -->
+	<div class="container">
+		<div class="img">
+			<!-- <img src="/img/travel.png"> -->
+		</div>
+		<div class="login-content">
+			<form action="/register" method="POST">
+				<img src="/img/avatar1.svg">
+				<h2 class="title">Sign Up</h2>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>Username</h5>
+           		   		<input class="input" type="text" name="username" id="username"  required>
+           		   </div>
+           		</div>
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Password</h5>
+           		    	<input class="input" type="password" name="password" id="password"  required>
+                   </div>
+                </div>
+                <div class="input-div mail">
+                    <div class="i"> 
+                         <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="div">
+                         <h5>E-mail</h5>
+                         <input class="input" type="email" name="email" id="email" required>
+                    </div>
+              </div>
+              <div class="input-div phone">
+                <div class="i"> 
+                    <i class='fas fa-phone-alt'></i>
+                </div>
+                <div class="div">
+                     <h5>Phone Number</h5>
+                     <input class="input" type="number" name="phoneno" id="phoneno"  required>
+                </div>
+            </div>
+            <div class="input-div adhaar">
+                <div class="i"> 
+                    <i class='fas fa-id-card-alt'></i>
+                </div>
+                <div class="div">
+                     <h5>Adhaar</h5>
+                     <input class="input" type="number" name="adhaar" id="adhaar" required>
+                </div>
+            </div>
+            	<input type="submit" class="btn" value="register">
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="/js/login.js"></script>
+</body>
+</html>
