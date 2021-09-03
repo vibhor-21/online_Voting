@@ -1,0 +1,170 @@
+.container.main{
+	margin-top: 7.0em;
+}
+#delete {
+	display:inline;
+}
+
+.template{
+	position: relative;
+}
+
+.template .head{
+	position: absolute;
+	top:0;
+	background: rgb(0, 0, 0); /* Fallback color */
+	background: rgba(90, 44, 44, 0.5); /* Black background with 0.5 opacity */
+	color: #f1f1f1; /* Grey text */
+	width: 50%; 
+	/* padding: 15px; Some padding */
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	margin-left: 345px;
+	margin-top: 240px;
+	font-size: 50px;
+	border-radius: 5px;	
+	z-index: 2;
+	font-weight: bold;
+}
+
+.font-img{
+	position: absolute;
+	z-index: 1;
+	opacity: 0.8;
+	filter: blur(8px);
+	/* -webkit-filter: blur(8px); */
+}
+
+.template .alert-img1{
+	position: absolute;
+	z-index:3;
+	top:25;
+	left:30;
+	width:250px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-align: center;
+	
+}
+.template .alert-img2{
+	position: absolute;
+	z-index:3;
+	top:300;
+	left:30;
+	width:250px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-align: center;
+	
+}
+.template .alert-img3{
+	position: absolute;
+	z-index:3;
+	top:20;
+	right:30;
+	width:250px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-align: center;
+	
+}
+
+.template .alert-img4{
+	position: absolute;
+	z-index:3;
+	top:300;
+	right:30;
+	width:250px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-align: center;
+	
+}
+
+#disclaimer{
+	position:absolute;	
+	top: 564px;;
+	z-index:3;
+	left:460;
+	font-size: 12px;
+}
+
+#head-nav{
+	background-color:black; 	
+	position: relative; 
+	z-index: 1;
+	box-shadow: none; 
+	width: 100%;
+	margin: none;	
+	padding: none;
+	opacity:0.6;
+
+}
+/* p #heading{
+	position: absolute;
+	color:darkblue;
+} */
+
+#admin-bg{
+	overflow:hidden;
+}
+.admin-tx{
+	position:absolute;
+	top:100;
+	left:500;
+	z-index:5;
+	font-size: 28px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight:bolder;
+}
+
+/* navbar */
+li,a{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 3%;
+    /* background-image: url("https://wallpaperaccess.com/full/1092716.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity:0.8;    */
+}
+
+.nav_links li{
+    display:inline-block;
+    margin: 10px;   
+    border-radius:50px;
+    padding:10px 20px;
+    letter-spacing: 1px;
+    
+}
+
+#home{
+    background-color: #00AFF5;
+}
+
+
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color:black;
+}
+
+
+.nav_header{
+    margin-right:900px;
+    letter-spacing: 5px;
+    font-weight: 700;
+    font-size: 26px;
+    font-family: 'Permanent Marker', cursive;
+    color:white;
+    
+    
+}
